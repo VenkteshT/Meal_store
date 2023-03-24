@@ -72,7 +72,7 @@ function createAndAppend(meal) {
   list.append(card);
 }
 
-// function for input change handling
+// function for search meal handling
 btn_search.addEventListener("click", (e) => {
   list.innerHTML = ``;
   let val = input.value;
