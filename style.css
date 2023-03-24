@@ -1,0 +1,107 @@
+:root {
+  --card-background: #eaa43a;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* nav bar  */
+ul li {
+  list-style: none;
+}
+
+#navbar {
+  padding: 0% 10%;
+  padding-top: 1%;
+  margin-top: 5vh;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+#navbar input {
+  background-color: orange;
+}
+
+/* meals container */
+#meals {
+  border: #eaa43a solid 0.5em;
+  border-radius: 6px;
+  margin-top: 5vh;
+  padding: 10vh 0;
+  max-height: 100vh;
+  width: 85%;
+  margin-left: 7%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
+  row-gap: 15px;
+  column-gap: 0px;
+  justify-items: center;
+  position: absolute;
+  left: 0;
+}
+@media (min-width: 900px) {
+  #meals {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#meals::-webkit-scrollbar {
+  display: none;
+}
+
+/* card styleing */
+.card {
+  /* width: 30vw; */
+  min-height: max-content;
+  padding: 0px !important;
+  border: solid 0.08em black;
+  max-width: 300px;
+}
+
+.card-body {
+  padding: 0px 0.4px !important;
+  box-sizing: border-box;
+}
+
+.card-header {
+  min-height: 10vh;
+}
+
+.card-footer {
+  background-color: var(--card-background);
+}
+
+/* favourites icon */
+.add-to-favourites {
+  color: blue !important;
+}
+
+.fa-star {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+
+.fa-star:hover {
+  cursor: pointer;
+}
+
+.fa-trash {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+/* faourite list */
+.list-group-item {
+  border: 1px solid black;
+}
+
+.list-group-item img {
+  border-radius: 8px;
+}
